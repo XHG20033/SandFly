@@ -3,8 +3,13 @@
 // Kotlin 2 compiles Compose through this compiler plugin instead of composeOptions.
 apply plugin: 'org.jetbrains.kotlin.plugin.compose'
 
+// Fork-only: with -PtestBuild, the app is io.github.aaron_gh.sandfly.test, named SandFly Test,
+// so that a build under test installs next to the usual one, with its own key and settings.
+// (Ported from Backtalk's upstream build logic; not present in the official repository.)
+def testBuild = project.hasProperty('testBuild')
+
 ext {
-    talkbackApplicationId = "io.github.aaron_gh.sandfly"
+    talkbackApplicationId = testBuild ? "io.github.aaron_gh.sandfly.test" : "io.github.aaron_gh.sandfly"
 }
 
 // ccache, when installed, for the CMake and ndk-build native libraries. Gradle's build cache does
