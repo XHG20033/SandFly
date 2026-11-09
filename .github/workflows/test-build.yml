@@ -50,3 +50,29 @@ jobs:
           name: sandfly-phone-full-debug
           # The root project is the Android app; APK lands in the repo-root build dir.
           path: build/outputs/apk/**/*.apk
+
+  # Mirrors upstream's unit-tests job, so PR-blocking tests are verified before opening a PR.
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: 25
+
+      - uses: gradle/actions/setup-gradle@v6
+
+      # Same tasks as upstream's unit-tests job. No ccache needed: unit tests don't build native code.
+      - name: Run unit tests
+        run: ./gradlew testPhoneFullDebugUnitTest testPhoneDebugUnitTest
+
+      - name: Upload test reports on failure
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: unit-test-reports
+          path: '**/build/reports/tests/'
