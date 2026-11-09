@@ -41,7 +41,9 @@ jobs:
           restore-keys: ccache-test-
 
       - name: Build phone-full debug APK
-        run: ./gradlew :assemblePhoneFullDebug
+        # -PtestBuild: fork-only port of Backtalk's switch; makes the app io.github.aaron_gh.sandfly.test
+        # ("SandFly Test") so test builds install next to the official app.
+        run: ./gradlew :assemblePhoneFullDebug -PtestBuild
 
       - uses: actions/upload-artifact@v7
         with:

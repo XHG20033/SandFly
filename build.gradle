@@ -61,6 +61,11 @@ android {
         targetSdk = 36
         testInstrumentationRunner = 'android.test.InstrumentationTestRunner'
         multiDexEnabled = true
+        // Fork-only: the app's resources override the libraries', so this renames the screen
+        // reader too. Ported from Backtalk's upstream build logic.
+        if (project.hasProperty('testBuild')) {
+            resValue "string", "talkback_title", "SandFly Test"
+        }
     }
     buildTypes {
         // The published builds are debug builds, signed with SandFly's key. Android runs a
