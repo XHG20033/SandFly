@@ -46,4 +46,5 @@ jobs:
       - uses: actions/upload-artifact@v7
         with:
           name: sandfly-phone-full-debug
-          path: talkback/build/outputs/apk/phoneFull/debug/*.apk
+          # The root project is the Android app; APK lands in the repo-root build dir.
+          path: build/outputs/apk/**/*.apk
