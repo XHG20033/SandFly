@@ -25,8 +25,8 @@
     <string name="new_features_0_7_0_shake">摇晃手机或在手机背面四击即可运行命令。请前往“设置, 手势, 摇晃”或“设置, 手势, 背面点击”。</string>
     <string name="new_features_0_7_0_touch_lock_heading">触摸锁定</string>
     <string name="new_features_0_7_0_touch_lock">触摸锁定期间，触摸屏幕不起作用。使用“锁定或解锁触摸”命令，或同时按两个音量键解锁。要自动锁定触摸，请前往“设置, 触摸, 自动锁定触摸”。</string>
-    <string name="new_features_0_7_0_double_tap_taps_heading">双击即单击屏幕</string>
-    <string name="new_features_0_7_0_double_tap_taps">在您选择的应用中，激活某项时会在屏幕上单击该项。请前往“设置, 触摸, 双击即单击屏幕”。</string>
+    <string name="new_features_0_7_0_double_tap_taps_heading">双击即点击屏幕</string>
+    <string name="new_features_0_7_0_double_tap_taps">在您选择的应用中，激活某项时会在屏幕上点击该项。请前往“设置, 触摸, 双击即点击屏幕”。</string>
     <string name="new_features_0_7_0_wrap_heading">循环前在最后一项停留</string>
     <string name="new_features_0_7_0_wrap">开启“循环”后，第一次滑过最后一项时会停在该项并播放结束提示音，下一次滑动才会循环。此设置默认开启，位于“设置, 导航”中。“在朗读控件中循环”位于同一屏幕。</string>
     <string name="new_features_0_7_0_inner_text_heading">分别聚焦项内的文字</string>
