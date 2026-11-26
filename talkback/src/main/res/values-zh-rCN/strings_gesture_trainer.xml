@@ -197,7 +197,7 @@
     <string name="gesture_trainer_group_edge_menus">边缘菜单</string>
     <string name="gesture_trainer_group_corners">角落</string>
     <string name="gesture_trainer_group_back_tap">背面点击</string>
-    <string name="gesture_trainer_left_out_two_finger_tap_swipes">已略过双指点击后接双指滑动的手势：“<xliff:g id="setting">%1$s</xliff:g>”已关闭。</string>
+    <string name="gesture_trainer_left_out_two_finger_tap_swipes">已跳过双指点击后接双指滑动的手势：“<xliff:g id="setting">%1$s</xliff:g>”已关闭。</string>
     <string name="gesture_trainer_how_swipe_hold">然后不要抬起，让手指保持不动至少 <xliff:g id="hold">%1$d</xliff:g> 毫秒，再抬起。</string>
     <string name="gesture_trainer_half_top">上</string>
     <string name="gesture_trainer_half_bottom">下</string>
