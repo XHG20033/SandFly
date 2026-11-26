@@ -21,7 +21,7 @@
     <string name="new_features_0_7_0_three_part">单指一笔向三个方向滑动，例如“依次向右、向上、向右滑”。请前往“设置, 手势, 三段滑动”。</string>
     <string name="new_features_0_7_0_two_stroke_heading">两笔滑动</string>
     <string name="new_features_0_7_0_two_stroke">两次单指滑动，中间抬起手指，例如“右滑，抬起，然后上滑”。要开启这些手势，请前往“设置, 手势, 两笔滑动之间的时间”。</string>
-    <string name="new_features_0_7_0_shake_heading">摇晃和在背面四击</string>
+    <string name="new_features_0_7_0_shake_heading">摇晃和背面四击</string>
     <string name="new_features_0_7_0_shake">摇晃手机或在手机背面四击即可运行命令。请前往“设置, 手势, 摇晃”或“设置, 手势, 背面点击”。</string>
     <string name="new_features_0_7_0_touch_lock_heading">触摸锁定</string>
     <string name="new_features_0_7_0_touch_lock">触摸锁定期间，触摸屏幕不起作用。使用“锁定或解锁触摸”命令，或同时按两个音量键解锁。要自动锁定触摸，请前往“设置, 触摸, 自动锁定触摸”。</string>
